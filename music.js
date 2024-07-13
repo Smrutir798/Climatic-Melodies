@@ -28,28 +28,40 @@ document.addEventListener('DOMContentLoaded', function () {
         let musicUrl;
 
         switch (condition) {
-            case 'clear':
-                musicUrl = 'music/I-Wanna-Be-Yours.mp3.mp3'; // Music for sunny weather
+            case 'clear sky':
+                musicUrl = 'music/Suraj-Hua-Maddham1.mp3'; // Example music for clear sky
                 break;
-            case 'clouds':
-                musicUrl = 'music/Mann Mera.mp3'; // Music for cloudy weather
+            case 'few clouds':
+                musicUrl = 'music/One-Love2.mp3'; // Example music for few clouds
                 break;
-            case 'haze':
-                musicUrl = 'music/mi-amor.mp3'; // Music for hazy weather
+            case 'scattered clouds':
+                musicUrl = 'music/Mann_Mera3.mp3'; // Example music for scattered clouds
+                break;
+            case 'broken clouds':
+                musicUrl = 'music/sajni4.mp3'; // Example music for broken clouds
+                break;
+            case 'shower rain':
+                musicUrl = 'music/Baarish5.mp3'; // Example music for shower rain
                 break;
             case 'rain':
-                musicUrl = 'music/hale-dil.mp3'; // Music for rainy weather
+                musicUrl = 'music/dildara6.mp3'; // Example music for rain
+                break;
+            case 'thunderstorm':
+                musicUrl = 'music/Ishq-Wala-Love7.mp3'; // Example music for thunderstorm
                 break;
             case 'snow':
-                musicUrl = 'music/closer.mp3'; // Music for winter weather
+                musicUrl = 'music/Snowman8.mp3'; // Example music for snow
                 break;
-            case 'autumn':
-                musicUrl = 'music/closer.mp3'; // Music for autumn weather
+            case 'mist':
+                musicUrl = 'music/Ishq-Wala-Love7.mp3'; // Example music for mist
+                break;
+            case 'Haze':
+                musicUrl = 'music/Mann_Mera3.mp3'; // Example music for haze
                 break;
             default:
-                musicUrl = 'music/Satranga.mp3'; // Default music for unknown conditions
+                musicUrl = 'music/One-Love2.mp3'; // Default music for unknown conditions
+                break;
         }
-
         audioPlayer.src = musicUrl;
         audioPlayer.play();
     }
