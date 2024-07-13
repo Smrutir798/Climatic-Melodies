@@ -45,18 +45,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .box {
     width: 50%;
-    height: 400px;
+    height: 430px;
     background: rgba(255, 255, 255, 0.34);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 button[type="submit"] {
     padding: 10px 20px;
     background-color: #007bff;
@@ -65,8 +71,7 @@ button[type="submit"] {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    position: relative;
-    left: 290px;
+    margin-top: 20px;
 }
 
 button[type="submit"]:hover {
@@ -98,9 +103,5 @@ button[type="submit"]:hover {
         width: 90%;
         height: 300px;
         font-size: 16px;
-    }
-    button[type="submit"] {
-        top:10px;
-        left: 120px;
     }
 }
