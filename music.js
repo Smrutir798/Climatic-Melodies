@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 musicUrl = 'music/closer.mp3'; // Music for winter weather
                 break;
             case 'autumn':
-                musicUrl = 'music/autumn.mp3'; // Music for autumn weather
+                musicUrl = 'music/closer.mp3'; // Music for autumn weather
                 break;
             default:
-                musicUrl = 'music/default.mp3'; // Default music for unknown conditions
+                musicUrl = 'music/Satranga.mp3'; // Default music for unknown conditions
         }
 
         audioPlayer.src = musicUrl;
