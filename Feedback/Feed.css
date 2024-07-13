@@ -19,13 +19,17 @@ body {
 
 .box {
     width: 55%;
-    height: 600px;
+    height: auto;
     background: rgba(255, 255, 255, 0.34);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p1,
@@ -36,8 +40,7 @@ p3 {
     font-size: 16px;
     font-family: 'SF PRO Display';
     color: #ffffff;
-    position: relative;
-    left: 40px;
+    align-self: flex-start;
 }
 
 .name1,
@@ -50,10 +53,6 @@ p3 {
     background-color: gray;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    position: relative;
-    left: 40px;
-}
-:placeholder-shown{
     color: #ffffff;
 }
 
@@ -70,8 +69,8 @@ button[type="submit"] {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    position: relative;
-    left: 330px;
+    margin-top: 20px;
+    align-self: center;
 }
 
 button[type="submit"]:hover {
@@ -97,7 +96,9 @@ button[type="submit"]:hover {
         left: 20px;
     }
 
-    button[type="submit"] {
-        left: 130px;
+    .box {
+        width: 90%;
+        height: auto;
+        font-size: 16px;
     }
 }
