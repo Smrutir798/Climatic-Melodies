@@ -57,6 +57,21 @@ body {
     -webkit-backdrop-filter: blur(4.9px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    left: 290px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
 /* Media Query for phones */
 @media only screen and (max-width: 600px) {
@@ -83,5 +98,9 @@ body {
         width: 90%;
         height: 300px;
         font-size: 16px;
+    }
+    button[type="submit"] {
+        top:10px;
+        left: 120px;
     }
 }
